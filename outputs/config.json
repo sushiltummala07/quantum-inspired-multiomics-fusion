@@ -1,0 +1,42 @@
+{
+  "data": {
+    "n_samples": 124,
+    "n_features": 50,
+    "n_qubits": 8,
+    "n_classes": 2,
+    "test_size": 0.15,
+    "val_size": 0.15,
+    "noise_level": 0.1,
+    "missing_rate": 0.0,
+    "random_seed": 42
+  },
+  "quantum": {
+    "n_qubits": 8,
+    "n_layers": 3,
+    "encoding": "amplitude",
+    "entanglement": "circular",
+    "diff_method": "backprop"
+  },
+  "fusion": {
+    "embed_dim": 8,
+    "n_heads": 2,
+    "dropout": 0.15,
+    "use_modality_dropout": true
+  },
+  "train": {
+    "epochs": 20,
+    "batch_size": 16,
+    "lr": 0.003,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "patience": 15,
+    "grad_clip": 1.0,
+    "warmup_epochs": 5,
+    "n_folds": 5,
+    "use_mixed_precision": false
+  },
+  "use_quantum": true,
+  "use_transformer": true,
+  "output_dir": "outputs",
+  "log_file": "outputs/run.log"
+}
