@@ -130,4 +130,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-Your Name
+Sushil Tummala
